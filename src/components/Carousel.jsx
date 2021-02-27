@@ -33,7 +33,6 @@ class Carousel extends React.Component {
   };
 
   render() {
-    console.log(this.state.currentImageIndex);
     return (
       <div>
         <button onClick={this.previousImage}>Left</button>

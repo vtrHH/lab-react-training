@@ -23,3 +23,17 @@
 .dice {
   height: 7em;
 }
+
+.numbers-list {
+  display: flex;
+  list-style: none;
+}
+
+.numbers-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 3em;
+  height: 3em;
+}
