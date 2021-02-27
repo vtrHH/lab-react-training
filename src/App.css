@@ -13,3 +13,13 @@
   padding-left: 1em;
   line-height: 0.5em;
 }
+
+.drivers-image {
+  height: 6em;
+  width: 6em;
+  border-radius: 50%;
+}
+
+.dice {
+  height: 7em;
+}
