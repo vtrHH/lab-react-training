@@ -1,17 +1,31 @@
 import React from 'react';
 import profiles from '../data/berlin.json';
 
-console.log(profiles);
-
 class FaceBook extends React.Component {
   render() {
     return (
       <div>
         <ul>
           {profiles.map((profile) => {
+            console.log(profile.isStudent);
             return (
-              <li key={profile.firstName}>
-                {profile.firstName} {profile.lastName}
+              <li className="profiles-overview" key={profile.firstName}>
+                <div>
+                  <img
+                    className="profiles-image"
+                    src={profile.img}
+                    alt={profile.firstName}
+                  />
+                </div>
+                <strong>First Name: </strong>
+                {profile.firstName} <br />
+                <strong>Last Name: </strong>
+                {profile.lastName} <br />
+                <strong>Country: </strong>
+                {profile.country} <br />
+                <strong>
+                  Type: {profile.isStudent ? 'Student' : 'Teacher'}
+                </strong>
               </li>
             );
           })}

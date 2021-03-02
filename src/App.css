@@ -37,3 +37,17 @@
   width: 3em;
   height: 3em;
 }
+
+.profiles-overview {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  padding: 0.5em;
+  margin-top: 1em;
+  list-style: none;
+}
+
+.profiles-image {
+  height: 6em;
+  width: 6em;
+}

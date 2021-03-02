@@ -13,10 +13,16 @@ class LikeButton extends React.Component {
   };
 
   render() {
+    const COLORS = ['purple', 'blue', 'green', 'yellow', 'orange', 'red'];
     return (
       <div>
-        <button onClick={this.incrementLikesCount}>
-          {this.state.likesCount} Likes
+        <button
+          style={{
+            backgoundColor: COLORS[this.state.likesCount % COLORS.length],
+          }}
+          onClick={this.incrementLikesCount}
+        >
+          {this.state.likesCount} Like {this.state.likesCount !== 1 && 's'}
         </button>
       </div>
     );
